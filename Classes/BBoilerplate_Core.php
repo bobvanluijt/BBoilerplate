@@ -4,6 +4,19 @@
 //
 class BBoilerplate {
 	
+	public function incl($i, $type){
+		if($type=='css'){
+			$returner  = '<style>';
+			$returner .= file_get_contents('./Cache/JsCss/'.$i);
+			$returner .= '</style>';
+		} else if($type=='js'){
+			$returner  = '<script>';
+			$returner .= file_get_contents('./Cache/JsCss/'.$i);
+			$returner .= '</script>';
+		}
+		return $returner;
+	}
+	
 	public function countryList($html=false){
 		//
 		// sends list with countries
