@@ -1,0 +1,206 @@
+#container {
+	position:relative;
+	width:800px;
+	left:50%;
+	margin-left:-400px;
+	margin-top:12px;
+	min-height:500px;
+}
+
+#container table {
+	width:100%;
+	border-style:none;
+	cursor:default;
+}
+#container thead {
+	text-transform:uppercase;
+}
+#container table tr {
+	padding:6px;
+	height:34px;
+	/* border-bottom: 1px solid #CCC !important; */
+}
+#container table td {
+		vertical-align:middle;
+}
+
+.ui-state-deegin {
+	cursor:pointer;
+	padding:0px;
+	margin-top:-5px !important;
+	border-radius: 10px;
+}
+.ui-state-deegin:hover {
+	background-color:#F2F2F2;	
+}
+.ui-state-deegin table {
+	cursor:pointer !important;
+	padding:0px;
+}
+.handle {
+	width:22px;
+	height:22px;
+	cursor:move;
+	margin-top:17px;
+}
+
+#sortable { list-style-type: none; margin: 0; padding: 0; width: 100%; }
+#sortable li { margin: 0 5px 22px 5px; padding: 5px; font-size: 1.2em; height: 1.5em; }
+html>body #sortable li { height: 104px; line-height: 1em; }
+.ui-state-highlight { height: 1.5em; line-height: 1em; }
+#sortable .ui-selecting { background: #FECA40; }
+#sortable .ui-selected { background:#F6F6F6; color: #000; }
+
+#sortableHeader { font-weight:bold; list-style-type: none; margin: 0; padding: 0; width: 100%; padding-left:20px; padding-bottom:20px; }
+#sortableHeader li { margin: 0 5px 5px 5px; padding: 5px; font-size: 1.2em; height: 1.5em; }
+html>body #sortableHeader li { height: 1.5em; line-height: 1.2em; }
+
+.projectView {
+	line-height:22px;
+	margin-top:-4px;
+}
+.projectViewSingle {
+	background-color:#F90;
+	font-size:11px;
+	padding-top:4px;
+	padding-bottom:3px;
+	padding-left:8px;
+	padding-right:8px;
+	border-radius:10px;
+}
+.add {
+	background-color:#FFF !important;
+	border: 1px solid !important;
+}
+.projectTitle {
+	font-family: NexusSansScWebPro,sans-serif;
+	position:relative;
+	clear: both;
+    display: inline-block;
+    overflow: hidden;
+    white-space: nowrap;
+	text-overflow: ellipsis;
+	margin-top:4px;
+	color:#F90;
+}
+.projectDesc {
+	position:relative;
+	clear: both;
+    display: block;
+    overflow: hidden;
+    white-space: nowrap;
+	text-overflow: ellipsis;
+	margin-top:-9px;
+	margin-bottom:3px;
+	font-size:14px;
+	cursor:text;
+}
+#projectsMenu {
+	position:absolute;
+	width:200px;
+	height:200px;
+	background-color:transparent;
+	overflow-y:visible;
+	z-index:9999;	
+}
+.projectsMenuOption {
+	padding-left:10px;
+	padding-bottom: 4px;
+	margin-top:2px;
+	box-shadow: 6px 6px 6px #888;
+}
+.projectsMenuOption:nth-of-type(1){
+	margin-top:-18px;	
+}
+.projectsMenuOption checkbox {
+	padding-left:10px;
+	padding-bottom: 4px;
+}
+.projectsMenuOption input[type=checkbox] {
+	padding-left:6px;	
+	padding-right:6px;	
+}
+.projectDesc[contenteditable="true"]:focus > p:hover {
+   border: 2px solid red;
+}
+.projectManager {
+	position:fixed;
+	left:50%;
+	top:5%;
+	margin-left:-157px;
+	width:314px;
+	height:380px;
+	border-radius: 10px;
+	background-color:transparent;
+	z-index:99999;
+}
+.projectManagerDark {
+	position:fixed;
+	left:0px;
+	top:0px;
+	bottom:0px;
+	right:0px;
+	background-color:#999;
+	opacity:0.42;
+	z-index:99998;
+}
+.projectBox {
+	position: relative;
+	width: 100px;
+	height: 100px;
+	background-color: red;
+	float: left;
+	padding: 2px;
+	margin: 2px;
+	border-radius: 10px;
+	cursor:pointer;
+}
+.projectBoxTitle {
+	text-align:center;
+	padding:10px;
+	font-weight:bold;
+	display: inline-block;
+
+    vertical-align: middle;
+}
+.addProject {
+	background-color: #999;
+}
+.addProject span {
+	font-size: 100px;
+	color: #FFF;
+	text-align: center;
+	top: -36px;
+	position: relative;
+	left: 19px;
+}
+.projectSelector {
+	border-radius: 10px;
+	padding:4px;
+	font-size:14px;
+	box-shadow: 10px 10px 5px #888888;
+	cursor:pointer;
+}
+
+/*
+ * ICONS
+ */
+.libImageTitle {
+	position:relative; margin-right:3px; width:12px; height:12px; top:1px;
+}
+.libImage {
+	position:relative; margin-right:3px; width:16px; height:16px; top:5px;
+}
+.libTime {
+	margin-top: -3px;
+	margin-left: 6px;
+}
+.libTimeText {
+	position:relative;
+	font-size: 12px;
+	top: 0.8px;
+}
+
+.headerButton {
+	font-size:12px !important;
+}

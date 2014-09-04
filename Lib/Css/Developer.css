@@ -1,0 +1,173 @@
+body {
+	overflow-x:hidden;
+}
+
+.login {
+	position:absolute;
+	background-color:#eeeeee;
+	padding:16px;
+	left:50%;
+	top:-400px;
+	width:212px;
+	margin-left:-106px;
+	margin-top:-180px;
+	border-radius:6px;
+}
+
+
+.container td {
+	vertical-align:middle;
+	font-style:italic;
+	font-weight:bold;
+	font-size:23px;
+}
+
+.loginButton {
+	display:none;
+	cursor:pointer;
+	width:180px;
+}
+
+.loginLogo {
+	width:180px;
+	margin-bottom:10px;
+}
+
+.containerItem {
+	display: table-cell;
+}
+
+.containerItem span {
+	display: table-cell;
+}
+.containerItem {
+	width:100%;
+}
+
+
+@media screen and (max-width: 320px) {
+	.login {
+		background-color:transparent;
+		margin-top:0px;
+		top:14px;
+		left:0px;
+		margin-left:5%;
+		width:90%;
+		box-shadow: 0px 0px 0px;
+	}
+	
+	.loginButton {
+		width:100%;	
+	}
+	
+	.loginLogo {
+		position:relative;
+		width:120px;
+		margin-bottom:14px;
+		left:50%;
+		margin-left:-60px;
+	}
+}
+
+.topBlock {
+	height:100%;
+}
+.blocks {
+	margin-top:26px;
+	height:380px;
+	overflow:hidden;
+}
+
+#headerContent a {
+	font-size:16px;
+	color:#FFF;
+	text-decoration: none;
+	border-bottom: 0px;
+}
+
+.footerText {
+	text-align:center;	
+}
+
+.innerBlocks {
+	position:relative;
+	width:240px;
+	height:240px;
+	background-repeat:no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	float:left;
+}
+.innerBlocks h1 {
+	font-size: 23px;
+	font-weight: bold;
+	color: #000;
+	text-align: left;
+}
+.innerBlocks h2 {
+	font-size: 15px;
+	font-weight: bold;
+	color: #000;
+	text-align: left;
+}
+.innerBlocksRight {
+	left:50%;
+	top:40px;
+}
+.innerBlocksLeft {
+	left:50%;
+	margin-left:-340px;
+	top:40px;
+}
+.innerBlocksText {
+	height: 140px !important;
+	top: 112px !important;
+	margin-left: -60px !important;
+	margin-top: -76px !important;
+	width: 440px !important;
+	text-align: justify !important;
+}
+#devices {
+	position:relative;
+	float:none;
+	width:400px;
+	left:61px;
+	height:288px;
+	background-image:url(//ajax.deeg.in/Lib/Img/devices.png);
+	background-repeat:no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+#moreInfo {
+	position:absolute;
+	width:70px;
+	height:70px;
+	bottom:19px;
+	left:50%;
+	margin-left:-45px;
+	background-image:url(//ajax.deeg.in/Lib/Img/moreInfo.png);
+	background-repeat:no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+.devBlock {
+	position:absolute;
+	background-color:red;
+	width:760px;
+	left:50%;
+	margin-left:-380px;
+	margin-top:38px;
+}
+
+.developerTable {
+	width:100%;	
+}
+.developerTable td {
+	width:33%;	
+}

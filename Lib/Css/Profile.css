@@ -1,0 +1,52 @@
+html, body, div, span, applet, object, iframe, p, blockquote, pre, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td {
+	font-size: 15px;
+}
+
+h1 {
+	line-height: 0px;
+	padding-top: 50px;
+	padding-bottom: 12px;
+}
+
+select {
+	min-width: 130px;
+}
+
+#container {
+	position:absolute;
+	width:380px;
+	top:12px;
+	left:50%;
+	padding:4px;
+	margin-left:-190px;
+}
+
+#profileImage {
+	width:100px;
+	border-radius:50%;
+}
+
+.nameTD {
+	top: -38px;
+	position: relative;
+	left: 10px;	
+}
+
+input {
+	width:100%;
+	height: 34px;
+	padding: 6px 12px;
+	font-size: 14px;
+	line-height: 1.42857143;
+	color: #555;
+	background-color: #fff;
+	background-image: none;
+	border: 1px solid #ccc;
+	border-radius: 4px;
+	-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+	box-shadow: inset 0 1px 1px rgba(0,0,0,.075);
+	-webkit-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+	transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
+	outline: none;
+}
+

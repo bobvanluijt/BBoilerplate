@@ -1,0 +1,198 @@
+body {
+	overflow-x:hidden;
+}
+
+.login {
+	position:absolute;
+	background-color:#eeeeee;
+	padding:16px;
+	left:50%;
+	top:-400px;
+	width:212px;
+	margin-left:-106px;
+	margin-top:-180px;
+	border-radius:6px;
+	z-index:10;
+	box-shadow: 0 1px 3px rgba(0,0,0,2.5);
+}
+
+
+.container td {
+	vertical-align:middle;
+	font-style:italic;
+	font-weight:bold;
+	font-size:23px;
+}
+
+.loginButton {
+	display:none;
+	cursor:pointer;
+	width:180px;
+}
+
+.loginLogo {
+	width:180px;
+	margin-bottom:10px;
+}
+
+.containerItem {
+	display: table-cell;
+}
+
+.containerItem span {
+	display: table-cell;
+}
+.containerItem {
+	width:100%;
+}
+
+.topBlock {
+	height: 694px;
+	top: 46px;
+	margin-bottom: 40px;
+}
+.blocks {
+	height:380px;
+	overflow:hidden;
+}
+
+#headerContent a {
+	font-size:16px;
+	color:#FFF;
+	text-decoration: none;
+	border-bottom: 0px;
+}
+
+.footerText {
+	text-align:center;	
+}
+
+.innerBlocks {
+	position:relative;
+	width:340px;
+	height:340px;
+	background-repeat:no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	float:left;
+}
+.innerBlocks h1 {
+	font-size: 19px;
+	font-weight: bold;
+	color: #000;
+	text-align: left;
+}
+.innerBlocks h2 {
+	font-family:NexusSerifWebPro,serif;
+	font-size: 16px;
+	font-weight: bold;
+	color: #000;
+	text-align: left;
+}
+.innerBlocksRight {
+	left:50%;
+	top:40px;
+}
+.innerBlocksLeft {
+	left:50%;
+	margin-left:-340px;
+	top:40px;
+}
+.innerBlocksText {
+	height:140px !important;
+	top:112px !important;
+	padding-left:30px !important;
+	padding-top:2px !important;
+}
+#devices {
+	position:relative;
+	float:none;
+	width:400px;
+	left:61px;
+	height:288px;
+	background-image:url(//ajax.deeg.in/Lib/Img/devices.png);
+	background-repeat:no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+#moreInfo {
+	position:absolute;
+	width:70px;
+	height:70px;
+	bottom:19px;
+	left:50%;
+	margin-left:-45px;
+	background-image:url(//ajax.deeg.in/Lib/Img/moreInfo.png);
+	background-repeat:no-repeat;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	cursor:pointer;
+	z-index: 2;
+}
+
+@media screen and (max-height: 350px) {
+	#homepageShow h1 {
+		display: none;
+	}
+	#logo img {
+		width:100px !important;
+	}
+	.loginLogo {
+		width:100px;
+		margin-bottom:14px;
+		margin-left:-50px;
+		display:none;
+	}
+	.login {
+		margin-top: -80px
+	}
+	#moreInfo {
+		width: 60px;
+		height: 60px;
+		margin-left: -30px;
+	}
+}
+
+@media screen and (max-width: 780px) {
+	.blockImage {
+		display:none !important;
+	}
+	.innerBlocksText {
+		left:0%;
+		right:0%;
+		margin-left:0px;
+		margin-right:0px;
+		top: 22px !important;
+		padding-left:8px !important;
+		width:100%;
+	}
+	.blocks {
+		height: 190px;
+	}
+	#homepageShow {
+		top:54px;
+		width: 100%;
+		left:0%;
+		margin-left: 0px;
+	}
+	#homepageShow h1 {
+		font-size:24px;
+	}
+	.login {
+		display:none;
+	}
+	#mainCTA {
+		display:none;
+	}
+	#headerContent {
+		margin-left: -150px;
+		width: 300px;
+	}
+	
+}

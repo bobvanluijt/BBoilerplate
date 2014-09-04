@@ -1,0 +1,14 @@
+
+*.pdf
+
+Lib/Hybridauth/hybridauth/config.php
+
+*.mp4
+
+*.mov
+
+*.ogg
+
+Lib/Hybridauth/login.php
+
+Lib/Hybridauth/hybridauth/install.php

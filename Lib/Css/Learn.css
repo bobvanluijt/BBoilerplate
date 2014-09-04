@@ -1,0 +1,44 @@
+#container {
+	position:absolute;
+	width:800px;
+	top:12px;
+	left:50%;
+	padding:4px;
+	margin-left:-400px;
+}
+
+h1 {
+	font-size:18px;
+	line-height:14px;
+	cursor:pointer;	
+}
+
+.answer {
+	position:relative;
+	display:none;
+	clear:both;
+}
+
+.bullet {
+	background: transparent url("/Lib/Icons/Open/help.png") no-repeat left center;
+	background-size: 16px;
+	padding-left: 20px;
+	padding-top:2px;	
+}
+
+#questionArea {
+	width:72%;
+	height:124px;
+	outline:0px;
+	padding:4px;
+	resize: none;
+}
+
+input {
+	border-radius: 20px;
+	width:420px;
+	padding-left:6px;	
+	outline: 0;
+	outline: none !important;
+}
+

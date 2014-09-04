@@ -1,0 +1,49 @@
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:sa="http://www.elsevier.com/xml/common/struct-aff/dtd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:prism="http://prismstandard.org/namespaces/basic/2.0/" xmlns:dc="http://purl.org/dc/elements/1.1/" xml:lang="en">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="initial-scale=1, user-scalable=no"/>
+  <head>
+    <script src="/Cache/JsCss/Core.js"></script>
+    <link rel="stylesheet" type="text/css" href="/Cache/JsCss/Core.css" media="all"/>
+    <link id="favicon" rel="shortcut icon" type="image/png" href="/Lib/Img/cornerstone_80x80.png" />
+  </head>
+  <body>
+  <input type="hidden" id="isAbstract" value="1">
+  
+  	<!--selling of article-->
+    <div style="[[DisplayBuy]]" >
+        <p class="mainPurchaseBlock"> 
+            <button class="purchaseArticle" id="rent" rel="[[Pii]]" style="width:140px;height:140px">Rent now for $5.00</button>&nbsp;
+            <button class="purchaseArticle" id="buy" rel="[[Pii]]" style="width:140px;height:140px">Loading price...</button><input type="hidden" id="buyVal" value="[[buyFor]]" />
+        <span>[[VAT]]</span>
+        </p>
+        
+        <hr>
+      </div>
+    <!--stop selling-->
+  
+    <div id="mainView" class="article">
+    
+      <h1 id="mainTitle">[[title]]</h1>
+      <div class="articlehead">
+        <ul class="authorGroup">
+          <li>[[name]]</li>
+        </ul>
+      </div>
+      <ul class="articleInfo">
+        <li class="doi"/>
+      </ul>
+      <hr class="before"/>
+      <div class="abstractPre" id="">
+        <p class="para">[[description]]</p>
+      </div>
+      <hr class="before"/>
+      
+      <div style="[[DisplaySetup]]">
+      		<h2>Purchase this article</h2>
+            <p>
+            	You can't buy or rent articles yet. Please setup your payment in your <a href="/profile" target="_self">profile</a>.
+            </p>
+      </div>
+  </div>
+</body>
+</html>

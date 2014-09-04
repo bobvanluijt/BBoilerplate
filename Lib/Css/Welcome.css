@@ -1,0 +1,133 @@
+#container {
+	position:absolute;
+	width:500px;
+	min-height:439px;
+	top:12px;
+	left:50%;
+	padding:4px;
+	margin-left:-250px;
+	display:none;
+	overflow:initial !important;
+}
+
+.demoBox {
+	position:absolute;
+	width:100%;
+	height:400px;
+	font-size:12px;
+}
+
+.ball {
+	position:relative;
+	background-color:#CCC;
+	border-radius:50%;
+	width:8px;
+	height:8px;
+	float:left;
+	margin:4px;
+}
+
+.selected {
+	background-color:#F90 !important;
+}
+
+.cursor {
+	position:absolute;
+	bottom:-138px;
+	padding:4px;
+	left:50%;
+	margin-left:-22px;
+}
+
+.buttonsToNext {
+	position:absolute;
+	bottom:-193px;
+	width:100%;
+}
+
+#demo1 {
+	display:none;
+}
+
+#demo2 {
+	display:none;
+}
+
+#demo3 {
+	display:none;
+}
+
+#demo4 {
+	display:none;
+}
+
+#animationBox {
+	position:absolute;
+	width:400px;
+	height:338px;
+	left:50%;
+	margin-left:-200px;
+	top:50%;
+	margin-top:-169px;
+}
+
+.animationClass {
+	position:absolute;
+	left:0px;
+	top:0px;
+	background-repeat:no-repeat;
+	background-size: 100%;
+	width:400px;
+	height:338px;
+	z-index:1;
+}
+
+#animation1 {
+	display:none;
+	text-indent: 180px;
+	background-image:url(/Lib/Img/animation_1.png);
+}
+#animation2 {
+	background-image:url(/Lib/Img/animation_2.png);
+	display:none;
+}
+#animation3 {
+	background-image:url(/Lib/Img/animation_3.png);
+	display:none;
+}
+#animation4 {
+	background-image:url(/Lib/Img/animation_4.png);
+	display:none;
+}
+#animation5 {
+	background-image:url(/Lib/Img/animation_5.png);
+	display:none;
+}
+#animation6 {
+	background-image:url(/Lib/Img/animation_6.png);
+	display:none;
+}
+#animation7 {
+	background-image:url(/Lib/Img/animation_7.png);
+	display:none;
+	z-index:2;
+	left:-600px;
+	top:-600px;
+}
+
+@media screen and (max-width: 569px) {
+
+	#container {
+		width: 300px !important;
+		left: 0px !important;
+		margin-left: 5px !important;
+	}
+	
+	button {
+		font-size:8px !important;
+	}
+	
+	video {
+		width: 200px !important;	
+	}
+}
