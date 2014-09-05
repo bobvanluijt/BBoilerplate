@@ -12,3 +12,5 @@ Lib/Hybridauth/hybridauth/config.php
 Lib/Hybridauth/login.php
 
 Lib/Hybridauth/hybridauth/install.php
+
+startTest.php
