@@ -6,9 +6,9 @@ include_once('./Classes/BBoilerplate_Core.php');
 BBoilerplate::run();
 BBoilerplate::validateUser();
 if(isset($_GET['p'])){
-	$output = BBoilerplate_Google::q($_GET['i'], $_GET['p']);
+	$output = BBoilerplate_Google::q(htmlspecialchars($_GET['i']), htmlspecialchars($_GET['p']));
 } else {
-	$output = BBoilerplate_Google::q($_GET['i']);
+	$output = BBoilerplate_Google::q(htmlspecialchars($_GET['i']));
 }
 
 if($_GET['addAll']=='true'){

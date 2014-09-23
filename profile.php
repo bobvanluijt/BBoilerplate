@@ -18,7 +18,7 @@ if($user['paypal'][0]['lastNumbers']!=''){
         <table width="100%" border="0">
           <tr>
             <td style="width:1px"><img src="<?=reset(explode('?', $user['picture']))?>" id="profileImage" /></td>
-            <td><h1 class="nameTD"><?=$user['firstname']?> <?=$user['lastname']?></h1></td>
+            <td><h1 class="nameTD"><?=htmlspecialchars($user['firstname'])?> <?=htmlspecialchars($user['lastname'])?></h1></td>
           </tr>
         </table>
         <a href="#balance">balance</a> - <a href="#pricing">pricing</a> - <a href="#details">details</a> - <a href="#payment">payment</a> - <a href="#options">options</a> - <a href="#logout">logout</a>
@@ -26,7 +26,7 @@ if($user['paypal'][0]['lastNumbers']!=''){
         <a name="balance"><h1>Account balance</h1></a>
         <table width="100%" border="0">
           <tr>
-            <td colspan="2"><input type="text" id="accountBalance" style="width:296px;height:60px;font-size:30px;" value="$<?=number_format((float)round($user['tokens']/100,2), 2, '.', '');?>" disabled /><br>
+            <td colspan="2"><input type="text" autocomplete="off" id="accountBalance" style="width:296px;height:60px;font-size:30px;" value="$<?=number_format((float)round($user['tokens']/100,2), 2, '.', '');?>" disabled /><br>
             <div style="font-size:10px;">* If you attempt to buy or rent an article, that costs more than your current balance allows, we will ask your permission to charge your credit card for the amount that exceeds your account balance.</div>
             </td>
           </tr>
@@ -84,28 +84,28 @@ if($user['paypal'][0]['lastNumbers']!=''){
         <form action="ajax.actions?i=profile" method="POST" target="_self">
         <table width="100%" border="0">
           <tr>
-            <td colspan="2">Login e-mail *<br><input type="text" style="width:296px;" value="<?=htmlspecialchars($user['email'])?>" disabled /></td>
+            <td colspan="2">Login e-mail *<br><input type="text" autocomplete="off" style="width:296px;" value="<?=htmlspecialchars($user['email'])?>" disabled /></td>
           </tr>
 		  <tr>
-            <td colspan="2">Contact e-mail<br><input type="text" style="width:296px;" name="contactEmail" value="<?=htmlspecialchars($user['contactEmail'])?>" /></td>
+            <td colspan="2">Contact e-mail<br><input type="text" autocomplete="off" style="width:296px;" name="contactEmail" value="<?=htmlspecialchars($user['contactEmail'])?>" /></td>
           </tr>
           <tr>
-          	<td colspan="2">First name<br><input type="text" style="width:296px;" name="firstname" value="<?=htmlspecialchars($user['firstname'])?>" /></td>
+          	<td colspan="2">First name<br><input type="text" autocomplete="off" style="width:296px;" name="firstname" value="<?=htmlspecialchars($user['firstname'])?>" /></td>
           </tr>
           <tr>
-          	<td colspan="2">Last name<br><input type="text" style="width:296px;" name="lastname" value="<?=htmlspecialchars($user['lastname'])?>" /></td>
+          	<td colspan="2">Last name<br><input type="text" autocomplete="off" style="width:296px;" name="lastname" value="<?=htmlspecialchars($user['lastname'])?>" /></td>
           </tr>
           <tr>
-          	<td colspan="2">Company<br><input type="text" style="width:296px;" name="company" value="<?=htmlspecialchars($user['company'])?>" /></td>
+          	<td colspan="2">Company<br><input type="text" autocomplete="off" style="width:296px;" name="company" value="<?=htmlspecialchars($user['company'])?>" /></td>
           </tr>
           <tr>
-          	<td colspan="2">Address<br><input type="text" style="width:296px;" name="address" value="<?=htmlspecialchars($user['address'])?>" /></td>
+          	<td colspan="2">Address<br><input type="text" autocomplete="off" style="width:296px;" name="address" value="<?=htmlspecialchars($user['address'])?>" /></td>
           </tr>
           <tr>
-          	<td colspan="2">Postal code<br><input type="text" style="width:296px;" name="postal" value="<?=htmlspecialchars($user['postal'])?>" /></td>
+          	<td colspan="2">Postal code<br><input type="text" autocomplete="off" style="width:296px;" name="postal" value="<?=htmlspecialchars($user['postal'])?>" /></td>
           </tr>
           <tr>
-          	<td colspan="2">City<br><input type="text" style="width:296px;" name="city" value="<?=htmlspecialchars($user['city'])?>" /></td>
+          	<td colspan="2">City<br><input type="text" autocomplete="off" style="width:296px;" name="city" value="<?=htmlspecialchars($user['city'])?>" /></td>
           </tr>
           <tr>
           	<td colspan="2">Country **<br><?=BBoilerplate::countryList(true)?></td>
@@ -162,13 +162,13 @@ if($user['paypal'][0]['lastNumbers']!=''){
                 <td>First name (as it appears on card)</td>
               <tr>
               </tr>
-                <td><input type="text" name="cc_firstname" /></td>
+                <td><input type="text" autocomplete="off" name="cc_firstname" /></td>
               </tr>
               <tr>
                 <td>Last name (as it appears on card)</td>
               <tr>
               </tr>
-                <td><input type="text" name="cc_lastname" /></td>
+                <td><input type="text" autocomplete="off" name="cc_lastname" /></td>
               </tr>
               <tr>
                 <td>Expiration date</td>
@@ -209,7 +209,7 @@ if($user['paypal'][0]['lastNumbers']!=''){
                 <span style="font-size:12px">All your payment details are saved securely using a PayPal PCI compliant server. <br><a href="https://www.paypal.com/cgi-bin/webscr?cmd=xpt/Help/general/TopQuestion6-outside" target="_blank">More info</a></span>
                 <p>&nbsp;</p>
                 <p>Redeem a coupon or discount code:<br />
-                <input type="text" id="redeemACode" /></p>
+                <input type="text" autocomplete="off" id="redeemACode" /></p>
                 <p><a name="logout"></a></p>
                 <a name="logout"><h1>Logout</h1></a>
                 <span style="font-size:12px">Deegin keeps your browser automatically signed in. Click <a href="/logout" target="_self">here</a> if you wish to logout.</span>
